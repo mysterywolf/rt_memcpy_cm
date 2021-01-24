@@ -1,7 +1,6 @@
 Import('rtconfig')
 from building import *
 
-cwd = GetCurrentDir()
 src	= Glob('*.c')
 
 if rtconfig.PLATFORM == 'armcc':
@@ -13,8 +12,6 @@ if rtconfig.PLATFORM == 'gcc':
 if rtconfig.PLATFORM == 'iar':
     src += Glob('*_iar.S')
 
-CPPPATH = [cwd]
-
-group = DefineGroup('Kernel', src, depend = ['PKG_USING_RT_MEMCPY_CM'], CPPPATH = CPPPATH)
+group = DefineGroup('Kernel', src, depend = ['PKG_USING_RT_MEMCPY_CM'])
 
 Return('group')
