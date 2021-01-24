@@ -8,7 +8,6 @@ if rtconfig.PLATFORM == 'armcc':
     src += Glob('*_rvds.S')
 
 if rtconfig.PLATFORM == 'gcc':
-    src += Glob('*_init.S')
     src += Glob('*_gcc.S')
 
 if rtconfig.PLATFORM == 'iar':
