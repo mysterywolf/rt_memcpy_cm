@@ -7,6 +7,18 @@
 
 
 
+## 测试结果
+
+keil环境下 10000个字节复制一万次 
+
+rt_memcpy为1261ms 
+
+本汇编版本为883ms
+
+C库memcpy为906ms
+
+
+
 ## 维护
 
 > [Meco Manjiantingman@foxmail.com](https://github.com/mysterywolf)
