@@ -20,6 +20,6 @@ C库memcpy为906ms
 
 ## 维护
 
-> [Meco Manjiantingman@foxmail.com](https://github.com/mysterywolf)
+> [Meco Man](https://github.com/mysterywolf)
 >
 > jiantingman@foxmail.com
