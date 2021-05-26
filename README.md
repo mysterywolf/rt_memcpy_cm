@@ -18,8 +18,17 @@ C库memcpy为906ms
 
 
 
+## 如何获取软件包
+
+```
+ RT-Thread online packages  --->
+    system packages  --->
+        acceleration: Assembly language or algorithmic acceleration packages  --->
+            [*] rt_memcpy_cm: Cortex-M kernel assembly accelerated version of rt_memcpy function
+```
+
+
+
 ## 维护
 
-> [Meco Man](https://github.com/mysterywolf)
->
-> jiantingman@foxmail.com
+[Meco Man](https://github.com/mysterywolf)
