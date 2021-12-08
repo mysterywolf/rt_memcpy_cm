@@ -23,7 +23,7 @@ C库memcpy为906ms
 ```
  RT-Thread online packages  --->
     system packages  --->
-        acceleration: Assembly language or algorithmic acceleration packages  --->
+        enhanced kernel services --->
             [*] rt_memcpy_cm: Cortex-M kernel assembly accelerated version of rt_memcpy function
 ```
 
