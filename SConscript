@@ -1,15 +1,15 @@
 Import('rtconfig')
 from building import *
 
-src	= Glob('*.c')
+src	= []
 
-if rtconfig.PLATFORM == 'armcc':
+if rtconfig.PLATFORM in ['armcc', 'armclang']: # Keil-MDK
     src += Glob('*_rvds.S')
 
 if rtconfig.PLATFORM == 'gcc':
     src += Glob('*_gcc.S')
 
-if rtconfig.PLATFORM == 'iar':
+if rtconfig.PLATFORM == 'iccarm': # IAR
     src += Glob('*_iar.S')
 
 group = DefineGroup('Kernel', src, depend = ['PKG_USING_RT_MEMCPY_CM'])
